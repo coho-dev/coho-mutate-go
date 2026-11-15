@@ -1,0 +1,10 @@
+{"Action":"start","Package":"example.com/probe"}
+{"Action":"run","Package":"example.com/probe","Test":"TestA"}
+{"Action":"run","Package":"example.com/probe","Test":"TestA/sub"}
+{"Action":"fail","Package":"example.com/probe","Test":"TestA/sub","Elapsed":0}
+{"Action":"fail","Package":"example.com/probe","Test":"TestA","Elapsed":0}
+{"Action":"run","Package":"example.com/probe","Test":"TestPanic"}
+{"Action":"run","Package":"example.com/probe","Test":"TestPanic/deep"}
+{"Action":"fail","Package":"example.com/probe","Test":"TestPanic/deep","Elapsed":0}
+{"Action":"fail","Package":"example.com/probe","Test":"TestPanic","Elapsed":0}
+{"Action":"fail","Package":"example.com/probe","Elapsed":0.004}

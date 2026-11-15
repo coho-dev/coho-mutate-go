@@ -1,0 +1,10 @@
+{"Action":"start","Package":"example.com/probe"}
+{"Action":"run","Package":"example.com/probe","Test":"TestA"}
+{"Action":"run","Package":"example.com/probe","Test":"TestA/sub"}
+{"Action":"fail","Package":"example.com/probe","Test":"TestA/sub","Elapsed":0}
+{"Action":"fail","Package":"example.com/probe","Test":"TestA","Elapsed":0}
+{"Action":"run","Package":"example.com/probe","Test":"TestLater"}
+{"Action":"pass","Package":"example.com/probe","Test":"TestLater","Elapsed":0}
+{"Action":"run","Package":"example.com/probe","Test":"TestHang"}
+{"Action":"output","Package":"example.com/probe","Test":"TestHang","Output":"panic: test timed out after 2s\n"}
+{"Action":"fail","Package":"example.com/probe","Elapsed":2.005}
